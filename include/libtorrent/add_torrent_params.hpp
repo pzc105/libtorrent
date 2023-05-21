@@ -55,6 +55,7 @@ POSSIBILITY OF SUCH DAMAGE.
 #include "libtorrent/client_data.hpp"
 #include "libtorrent/aux_/noexcept_movable.hpp"
 #include "libtorrent/fwd.hpp"
+#include "libtorrent/torrent_status.hpp"
 
 namespace libtorrent {
 
