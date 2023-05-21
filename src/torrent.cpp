@@ -6997,6 +6997,7 @@ namespace {
 #if TORRENT_ABI_VERSION < 3
 		ret.info_hash = ret.info_hashes.get_best();
 #endif
+		ret.state = state();
 
 		if (valid_metadata() && (flags & torrent_handle::save_info_dict))
 		{

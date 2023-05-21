@@ -234,6 +234,8 @@ TORRENT_VERSION_NAMESPACE_3
 		// add_torrent_params object.
 		info_hash_t info_hashes;
 
+		torrent_status::state_t state;
+
 		// ``max_uploads``, ``max_connections``, ``upload_limit``,
 		// ``download_limit`` correspond to the ``set_max_uploads()``,
 		// ``set_max_connections()``, ``set_upload_limit()`` and
