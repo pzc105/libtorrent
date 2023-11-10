@@ -1280,6 +1280,8 @@ namespace libtorrent {
 
 		static constexpr int no_gauge_state = 0xf;
 
+		add_torrent_params get_resume_data(resume_data_flags_t const flags) const;
+
 	private:
 
 		void on_exception(std::exception const& e);

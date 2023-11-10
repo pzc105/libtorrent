@@ -12281,4 +12281,11 @@ namespace {
 	catch (std::exception const&) {}
 #endif
 
+	add_torrent_params torrent::get_resume_data(resume_data_flags_t const flags) const
+	{
+		add_torrent_params atp;
+		write_resume_data(flags, atp);
+		return atp;
+	}
+
 }

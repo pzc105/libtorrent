@@ -967,6 +967,9 @@ namespace libtorrent {
 	bool torrent_handle::in_session() const
 	{ return !sync_call_ret<bool>(false, &torrent::is_aborted); }
 
+	add_torrent_params torrent_handle::get_resume_data(resume_data_flags_t const flags) const
+	{ return sync_call_ret<add_torrent_params>(add_torrent_params(), &torrent::get_resume_data, flags); }
+
 	static_assert(std::is_nothrow_move_constructible<torrent_handle>::value
 		, "should be nothrow move constructible");
 	static_assert(std::is_nothrow_move_assignable<torrent_handle>::value
