@@ -1398,6 +1398,8 @@ namespace aux {
 		// which returns immediately.
 		bool in_session() const;
 
+		add_torrent_params get_resume_data(resume_data_flags_t const flags) const;
+
 	private:
 
 		template<typename Fun, typename... Args>
