@@ -7254,7 +7254,6 @@ namespace {
 
 	void torrent::get_peer_info(std::vector<peer_info>* v)
 	{
-		v->clear();
 		for (auto const peer : *this)
 		{
 			TORRENT_ASSERT(peer->m_in_use == 1337);
